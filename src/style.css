@@ -1,8 +1,11 @@
 #gameWrapper{
-  margin-top: 16px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  margin: 16px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+  max-width: 1fr;
 }
 
 .gamediv{
@@ -13,9 +16,23 @@
   align-items: center;
   padding: 8px;
   background-color: gray;
+  border-radius: 20px;
 }
-.gamediv h1, h2{
-  font-size: 20px;
+.gamediv h1{
+
+  text-align: center;
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.gamediv h2{
+  text-align: center;
+  font-size: clamp(0.5rem, 1.5vw, 0.9rem);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .favorit{

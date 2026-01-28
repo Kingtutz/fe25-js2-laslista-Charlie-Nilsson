@@ -1,3 +1,9 @@
+const showFilterBtns = document.querySelector('#showfilterbtn')
+const filterDiv = document.querySelector('#filterDiv')
+showFilterBtns.addEventListener('click', () => {
+  filterDiv.classList.toggle('hidden')
+})
+
 export function filterAndRender (
   games,
   container,

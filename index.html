@@ -16,24 +16,27 @@
       <input type="text" name="creater" id="" placeholder="Creater" />
       <button>Add game</button>
     </form>
-    <button id="showAll">Show all</button>
-    <button id="showFavorits">Show Favorits</button>
-    <button id="reset">Reset filters</button>
-    <div>
-      <label for="sortCreater">Sort by creator:</label>
-      <select name="sortCreater" id="sortCreater">
-        <option value="">None</option>
-        <option value="aö">A-Ö</option>
-        <option value="öa">Ö-A</option>
-      </select>
-    </div>
-    <div>
-      <label for="sortTitle">Sort by title:</label>
-      <select name="sortTitle" id="sortTitle">
-        <option value="">None</option>
-        <option value="aö">A-Ö</option>
-        <option value="öa">Ö-A</option>
-      </select>
+    <button id="showfilterbtn">Show filters</button>
+    <div id="filterDiv" class="hidden">
+      <button id="showAll">Show all</button>
+      <button id="showFavorits">Show Favorits</button>
+      <button id="reset">Reset filters</button>
+      <div>
+        <label for="sortCreater">Sort by creator:</label>
+        <select name="sortCreater" id="sortCreater">
+          <option value="">None</option>
+          <option value="aö">A-Ö</option>
+          <option value="öa">Ö-A</option>
+        </select>
+      </div>
+      <div>
+        <label for="sortTitle">Sort by title:</label>
+        <select name="sortTitle" id="sortTitle">
+          <option value="">None</option>
+          <option value="aö">A-Ö</option>
+          <option value="öa">Ö-A</option>
+        </select>
+      </div>
     </div>
     <div id="gameWrapper"></div>
   </body>
