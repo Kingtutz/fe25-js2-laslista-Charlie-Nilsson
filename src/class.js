@@ -1,4 +1,3 @@
-
 export class Game {
   #id
   #title
@@ -16,7 +15,6 @@ export class Game {
     }.json`
   }
 
-  // Getters for filtering/sorting
   get title () {
     return this.#title
   }
@@ -34,7 +32,6 @@ export class Game {
     const title = document.createElement('h1')
     const creater = document.createElement('h2')
     const delBtn = document.createElement('button')
-    console.log(this.#id)
     gameDiv.id = this.#id
     gameDiv.classList.add('gamediv')
     title.innerText = 'Game title: ' + this.#title

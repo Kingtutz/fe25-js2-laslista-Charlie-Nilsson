@@ -15,7 +15,6 @@ const logGame = data => {
   gameWrapper.innerHTML = ''
   games.forEach(game => game.render(gameWrapper))
 
-  // Setup filters after games are loaded
   setupFilters(games, gameWrapper)
 }
 

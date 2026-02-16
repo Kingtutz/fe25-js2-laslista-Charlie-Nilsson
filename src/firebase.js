@@ -1,6 +1,6 @@
 const url =
   'https://realtime-database-d9932-default-rtdb.europe-west1.firebasedatabase.app/games.json'
-// Import the functions you need from the SDKs you need
+
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js'
 import {
   getDatabase,
@@ -27,7 +27,7 @@ export const getAll = async () => {
   if (!response.ok) throw new Error(response.status)
 
   const games = await response.json()
-  console.log(games)
+
   return games
 }
 
@@ -47,6 +47,6 @@ export const postGame = async game => {
   const newID = await response.json()
   console.log(newID.name)
   console.log(newGame)
-  //firebase skickar tillbaka id:t som genererades
+
   return { id: newID.name, game, favorit: false }
 }
