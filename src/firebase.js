@@ -17,6 +17,8 @@ const firebaseConfig = {
   messagingSenderId: '160805321072',
   appId: '1:160805321072:web:7a1be307241826aab237b5'
 }
+const baseUrl =
+  'https://messageboard-77286-default-rtdb.europe-west1.firebasedatabase.app/messages'
 
 const app = initializeApp(firebaseConfig)
 export const db = getDatabase(app)
